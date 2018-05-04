@@ -4,4 +4,4 @@ prettyjson:{[f;d]
   f 0:system"cat ",(1_string hsym f),"| python -m json.tool"
   }
 
-prettyjson[`:ag.json;d]
+/ prettyjson[`:ag.json;d]
