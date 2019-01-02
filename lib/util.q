@@ -2,5 +2,5 @@
 .util.getFn:{(first 2_(.Q.btx .Q.Ll`)[;1;0]),":"}
 .util.cleandb:{[db](system "unlink ",.types.fstr .Q.dd[db]@) each where not f!(count key hsym@) each f:key db}
 .util.systemtz:`$raze system"timedatectl | grep 'Time zone' | awk -F' ' '{print $3}'"
-
 .util.applyMap:{[tbl;map]cols[tbl]^map cols tbl}
+
