@@ -4,3 +4,4 @@
 .util.systemtz:`$raze system"timedatectl | grep 'Time zone' | awk -F' ' '{print $3}'"
 .util.applyMap:{[tbl;map]cols[tbl]^map cols tbl}
 .util.cap:@[;0;upper]
+.util.loadrel:{system"l ","/"sv(-1_("/\\""w"~first string .z.o)vs(reverse value x)2),enlist x[]}
