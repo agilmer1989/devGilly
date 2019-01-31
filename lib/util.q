@@ -5,3 +5,7 @@
 .util.applyMap:{[tbl;map]cols[tbl]^map cols tbl}
 .util.cap:@[;0;upper]
 .util.loadrel:{system"l ","/"sv(-1_("/\\""w"~first string .z.o)vs(reverse value x)2),enlist x[]}
+f: {n:x<0;$[n;"-";""],"." sv @[;0;{reverse "," sv 3 cut reverse x}] "." vs .Q.f[2;abs x]} [‎1/‎31/‎2019 3:46 PM]  Hobin, Juan:  
+
+ 
+
