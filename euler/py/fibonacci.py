@@ -35,8 +35,7 @@ def fibonacci_sequence_limit(limit):
         nth= n1 + n2
         n1 = n2
         n2 = nth
-
-    sequence.append(n2)
+    sequence.append(n1)
     return sequence
 
 def euler_solution ():
@@ -47,3 +46,18 @@ def euler_solution ():
         if num % 2 == 0:
             total+=num
     return total
+
+# Generator solution
+# print sum(even_fib(4000000))
+def even_fib(limit):
+    a, b = 0, 1
+    while a < limit:
+        if not a % 2:
+            yield a
+        a, b = b, a + b
+
+def fib(limit):
+    a, b = 0, 1
+    while a < limit:
+        yield a
+        a, b = b, a + b
