@@ -6,7 +6,9 @@
 
 * ```source venv/bin/activate```
 
-* pip install flast
+* ```pip install flasK```
+
+* ```flask run```
 
 ## [Part 2: Templates](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-ii-templates)
 
