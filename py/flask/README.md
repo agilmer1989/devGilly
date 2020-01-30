@@ -8,5 +8,5 @@
 
 * pip install flast
 
-## [Part 2: Templates] (https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-ii-templates)
+## [Part 2: Templates](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-ii-templates)
 
