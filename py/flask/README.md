@@ -1,4 +1,4 @@
-# Flast Mega-tutorial 
+# Flask Mega-tutorial 
 
 ## [Part 1: Hello, World!](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
 
@@ -11,4 +11,6 @@
 * ```flask run```
 
 ## [Part 2: Templates](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-ii-templates)
+
+
 
