@@ -65,7 +65,8 @@ exists:{[variable]
 	isDefined
 	}
 ``` 
-##Question 4
+
+## Question 4
 
 Depends on me: In q we define a view or dependency with '::', e.g.
 ```
@@ -87,13 +88,14 @@ q).z.b `a`d
 `b`c
 ,`e 
 ```
-Write a function ```dependson``` which takes a single symbol ```v``` and returns a list of ALL the variables which are invalidated by assignent ot v, e.g.: 
+Write a function `dependson` which takes a single symbol `v` and returns a list of ALL the variables which are invalidated by assignent ot v, e.g.: 
 ```
 q)dependson `a
 `a`b`c`e`f`g
 ```
 
 ### Answer 4
+
 ```
 /function takes single symbol v and returns a list of all variables which are dependent on v
 /@param v (symbol) variable name
@@ -185,7 +187,7 @@ represents:
       v	  v         |
       f   g --------+
 ```
-Write function 'loop' which detects the existence of cycles (loops) in a graph like the one above. 
+Write function `loop` which detects the existence of cycles (loops) in a graph like the one above. 
 
 Example return options:
 ```
@@ -194,10 +196,10 @@ Example return options:
 	q)loop d
 	`d`e`g
 ```
-###Answer 7
+### Answer 7
 
 
-##Question 8
+## Question 8
 
 Functional select: Given the below table write a function f to select any column or combination of columns by any other column or combination
 
@@ -207,7 +209,7 @@ t:([]time:12:00:0.000+1000*til 27;sym:27#3#`$'.Q.A;col1:sum each (-1 0.5 -1.5 -0
 f[`time`col2;`sym`col1;t] ~ select time,col2 by sym,col1 from t
 ```
 
-###Answer 8
+### Answer 8
 
 ``` 
 f:{[columns;groupBy;tbl]
@@ -221,4 +223,5 @@ f:{[columns;groupBy;tbl]
 	groupBy:ensureList groupBy;
 	?[tbl;();groupBy!groupBy;columns!columns]
 	}
-```		
+
+```
