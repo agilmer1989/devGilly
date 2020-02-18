@@ -71,3 +71,4 @@ exists:{[variable]
 	?[tbl;();groupBy!groupBy;columns!columns]
 	}
 		
+depends:(1 rotate (1+max where max enlist[`]=\:key[depends])#key[depends]) xcols depends

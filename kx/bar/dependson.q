@@ -9,8 +9,11 @@ f::e+4
 g::f+5
 
 dependson:{[v]
-	except[raze count(raze .z.b@)\v;v]
+	raze count(raze .z.b@)\v
 	}
+
+show "dependson `a~`a`b`c`e`f`g"
+show dependson[`a]~`a`b`c`e`f`g
 
 
 
