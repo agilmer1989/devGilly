@@ -1,0 +1,1 @@
+results:flip `runId`runTime`opType`tableName`rowCount`symCount`isCompressed`isEncrypted`compressionParams`columnCount`tableAttributes`executionTimeUs`memorySizeKb`diskUsageKb`throughputKbps!"jp*sjjbb*j*ffjf"$\:();
